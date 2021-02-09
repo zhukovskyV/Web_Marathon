@@ -1,0 +1,42 @@
+th {
+    background-color: black;
+    color: white;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td {
+    border: 1px solid gainsboro;
+}
+
+#Soul {
+    background-color: #cc944d;
+}
+
+#Time {
+    background-color: #377e22;
+}
+
+#Space {
+    background-color: #24568d;
+}
+
+#Mind {
+    background-color: #fffe55;
+}
+
+#Reality {
+    background-color: #b13735;
+}
+
+#Power {
+    background-color: #7f76b2;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20%;
+}

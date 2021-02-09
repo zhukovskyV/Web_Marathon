@@ -1,0 +1,10 @@
+ .japan {
+    width: 300px;
+    height: 200px;
+    border: 1px solid gainsboro;
+    background: radial-gradient(currentColor 50%, transparent 50%)
+    50% / 53% 75%
+    no-repeat;
+     color: #9f3037;
+
+}

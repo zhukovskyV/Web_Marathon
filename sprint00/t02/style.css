@@ -1,0 +1,21 @@
+#Bttn {
+    color: #377e22;
+}
+
+#Bttn:hover {
+    color: #b13735;
+}
+
+Div {
+    display: grid;
+    grid-template-columns: 1fr 60px;
+}
+
+input {
+    padding-left: 10px;
+    color: green;
+}
+
+input:hover {
+    color: red;
+}
