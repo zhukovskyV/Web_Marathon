@@ -2,9 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Superhero Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <h1>Superhero Form</h1>
+    <form action="/my-firs-form-page">
+        <fieldset>
+            <legend>About the Superhero</legend>
+            <p>
+                <label for="real_name">Real Name</label>
+                <input type="text" id="real_name" name="real_name_input" placeholder="Superhero real name" autofocus>
+                <label for="hero_name">Superhero Name</label>
+                <input type="text" id="hero_name" name="hero_name_input" placeholder="Superhero alias">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age_input" min="1" max="999">
+            </p>
+            <p>
+                <label for="cv">About</label>
+                <textarea id="cv" name="cv_input" cols="70" rows="5" maxlength="500" placeholder="Information about the superhero, max 500 symbols"></textarea>
+            </p>
+            <p>
+                <label for="photo">Photo: </label>
+                <input type="file" id="photo" name="photo_input">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Powers</legend>
+            <p>
+                <input type="checkbox" name="telekinesis" id="telekinesis">
+                <label for="telekinesis">Telekinesis</label>
+                <input type="checkbox" name="strength_speed" id="speed_and_strength">
+                <label for="speed_and_strength">Super strength or speed</label>
+                <input type="checkbox" name="shapeshifting" id="shapeshifting">
+                <label for="shapeshifting">Shapeshifting</label>
+                <input type="checkbox" name="flight" id="flight">
+                <label for="flight">Flight</label>
+                <input type="checkbox" name="elemental_control" id="elemental_control">
+                <label for="elemental_control">Elemental control</label>
+                <input type="checkbox" name="other" id="other_check">
+                <label for="other_check">Other</label>
+            </p>
+            <p>
+                <label for="level">Level of Control</label>
+               <input id="level" type="range" name="level_control" min="0" max="10" value="1">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Origin of Power</legend>
+            <p>
+                <input type="radio" name="unknown" id="unknown">
+                <label for="unknown">Unknown</label>
+                <input type="radio" name="accident" id="accident">
+                <label for="accident">Freak lab accident</label>
+                <input type="radio" name="ancient" id="ancient">
+                <label for="ancient">Chosen by any ancient wise being</label>
+                <input type="radio" name="not_human" id="not_human">
+                <label for="not_human">The superhero is not human</label>
+                <input type="radio" name="other" id="other_radio">
+                <label for="other_radio">Other</label>
+            </p>
+        </fieldset>
+        <p>
+        <input type="reset" value="CLEAR">
+        <input type="submit" value="SEND">
+        </p>
+    </form>
 </body>
 </html>

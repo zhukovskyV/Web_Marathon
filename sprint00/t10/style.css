@@ -1,0 +1,30 @@
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Lato", sans-serif;
+}
+
+.child {
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.child:hover {
+    box-shadow: -1px 1px 11px 4px rgba(0, 0, 0, 0.5);
+}
+
+#main span:first-child {
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    background-color: rgb(90, 147, 178);
+}
+#main span:last-child {
+    font-size: 2em;
+    font-weight: 400;
+}

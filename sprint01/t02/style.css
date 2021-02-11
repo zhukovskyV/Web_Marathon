@@ -1,0 +1,25 @@
+.box {
+    max-width: 900px;
+    height: auto;
+}
+
+#glove {
+    width: 150px;
+}
+
+
+.people {
+    height: 100px;
+}
+
+#glove:hover+.box > div:nth-child(odd) > img:nth-child(odd) {
+    visibility: hidden;
+}
+
+#glove:hover+.box > div:nth-child(even) > img:nth-child(even) {
+    visibility: hidden;
+}
+
+img {
+    margin: 20px;
+}

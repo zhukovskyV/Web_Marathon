@@ -1,0 +1,26 @@
+span {
+    display: inline-block;
+    color: white;
+}
+
+h1 {
+    background-color: palevioletred;
+    text-align: center;
+    font-family: Silom, sans-serif;
+    font-size: 5em;
+}
+
+li {
+    background-color: aquamarine;
+    padding: 3px;
+}
+
+#drop_down {
+    list-style: none;
+    position: relative;
+    z-index: 3;
+}
+
+#drop_down li:hover .child {
+
+}

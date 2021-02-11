@@ -1,5 +1,5 @@
 table {
-    background: linear-gradient(90deg, #6e0000, antiquewhite);
+    background: linear-gradient(90deg, #6a2d25, #824f46);
     border-collapse: collapse;
     text-align: center;
     color: midnightblue;
@@ -11,28 +11,44 @@ th {
     padding: 10px;
 }
 
+#last {
+    background: linear-gradient(90deg, #6e0000, antiquewhite);
+}
+
+a {
+    color:white;
+}
+
 tr {
     padding: 5px 50px 5px 50px;
 }
 
 td {
+    background-color: rgb(245, 235, 219);
+    border: 2px solid rgba(189, 195, 199, 0.05);
+
+}
+
+td:first-child {
     border: 2px solid rgba(189, 195, 199, 0.05);
     /*background-color: rgb(245, 235, 219);*/
     padding: 10px;
 }
 
 tr:nth-child(odd) td:first-child {
-    /*background: linear-gradient(90deg, #6a2d25, #824f46);*/
+    background: linear-gradient(90deg, #6a2d25, #824f46);
     color: white;
+}
+
+tr:nth-child(even) td:first-child {
+    background: linear-gradient(90deg, rgb(91, 24, 16), rgb(117, 60, 50));
 }
 
 td:first-child {
     color: white;
 }
 
-tr:nth-child(even) td:first-child {
-    background: linear-gradient(90deg, #5c1810, #b59388);
-}
+
 
 .darker_background {
     background-color: rgb(115, 33, 22);
