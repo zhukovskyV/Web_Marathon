@@ -6,9 +6,9 @@ function heroName() {
 
     if (result.match(animal_name_reg) === null) {
         alert("Error name");
-        return false;
+        throw("Error name");
     }
-    return result.match(animal_name_reg);
+    return result;
 }
 
 function heroGender() {
@@ -17,9 +17,9 @@ function heroGender() {
         "");
     if (result.match(gender) === null) {
         alert("Error gender");
-        return false;
+        throw("Error gender");
     }
-    return result.match(gender);
+    return result;
 }
 
 function heroAge() {
@@ -30,21 +30,17 @@ function heroAge() {
 
     if (result.match(age) === null) {
         alert("Error age");
-        return false;
+        throw("Error age");
     }
-    return result.match(age);
+    return result;
 }
 
 function heroNameMaker() {
-    // if(!heroName() || !heroGender() || !heroAge())
-    //     return 0;
     let name = heroName();
     let gender = heroGender();
     let age = heroAge();
     let sub_name = "hero";
 
-
-        return 0;
     switch (gender) {
         case "female":
             sub_name = "woman";
@@ -53,16 +49,9 @@ function heroNameMaker() {
             sub_name = "man";
             break;
     }
+    if (age < 18 && gender === "female") sub_name = "girl";
+    if (age < 18 && gender === "male") sub_name = "boy";
 
-    switch (age) {
-        case age < 18 && gender === "female":
-            sub_name = "girl";
-            break;
-        case age < 18 && gender === "male":
-            sub_name = "boy";
-            break;
-    }
-
-    alert(`The super hero is: ${name}-${gender}`);
+    alert(`The super hero is: ${name}-${sub_name}`);
 }
 heroNameMaker();
