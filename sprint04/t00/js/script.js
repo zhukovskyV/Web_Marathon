@@ -1,23 +1,22 @@
-let count = 1;
+let count = true;
 
 function transformation() {
-    const transform = document.getElementById("hero");
+    let transform = document.getElementById("hero");
     const background = document.getElementById("lab");
 
-    if (count === 2) {
+    if (!count) {
         transform.textContent = "Hulk";
         transform.style.letterSpacing = "6px";
         transform.style.fontSize = "130px";
         background.style.background = "#70964b"
-
-        count = 1;
+        count = true;
     } else {
-        const transform = document.getElementById("hero");
+        transform = document.getElementById("hero");
         transform.style.fontSize = "60px";
         transform.style.letterSpacing = "2px";
         transform.textContent = "Bruce Banner";
         background.style.background = "#ffb300"
-        count = 2;
+        count = false;
     }
 }
 
